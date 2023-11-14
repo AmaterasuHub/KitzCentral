@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore high-quality football T-shirts at KitzCentral - Your Modern T-shirt Shop">
+  <title>KitzCentral - Modern Football T-shirt Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-left">
+      <img id="logo" src="logo.png" alt="KitzCentral Logo">
+      <h1>KitzCentral</h1>
+    </div>
+    <nav>
+      <a href="home.html" class="nav-button">Home</a>
+      <a href="contact.html" class="nav-button">Shop 🎽</a>
+      <a href="tos.docx" class="nav-button" download="tos.docx">Tos 📄</a>
+      <a href="contact.html" class="nav-button">Contact 📞</a>
+      <a href="Faq.html" class="nav-button">Faq ❓</a>
+      <a href="login.html" class="nav-button">Login 🔒</a>
+
+    </nav>
+  </header>
+
+  <section class="intro-section">
+    <div class="intro-content">
+      <h1>Welcome to KitzCentral</h1>
+      <p>Discover the latest and trendiest football T-shirts. Elevate your style and showcase your passion for the game.</p>
+    </div>
+
+  </section>
+
+  <section id="tabs-section">
+    <div class="tabs-container">
+      <button class="tab-button" data-tab="football">Football T-Shirts</button>
+      <button class="tab-button" data-tab="tracksuits">Tracksuits</button>
+      <button class="tab-button" data-tab="hoodies">Basketball Jerseys</button>
+    </div>
+
+  </section>
+
+
+  <section id="football-section" class="tshirt-container">
+    <div class="tshirt">
+      <img src="football-tshirt1.jpg" alt="Football T-shirt 1">
+      <h2>Football T-shirt 1</h2>
+      <p>£25.00</p>
+      <p>Size: S, M, L</p>
+      <button onclick="location.href='ExampleTshirt.html';">Buy Now</button>
+    </div>
+    <div class="tshirt">
+      <img src="football-tshirt2.jpg" alt="Football T-shirt 2">
+      <h2>Football T-shirt 2</h2>
+      <p>£20.00</p>
+      <p>Size: S, M, L</p> 
+      <button onclick="location.href='your_redirect_page.html';">Buy Now</button>
+    </div>
+  </section>
+
+  </section>
+
+  <section id="tracksuits-section" class="tshirt-container">
+    <div class="tshirt">
+      <img src="tracksuit1.jpg" alt="Tracksuit 1">
+      <h2>Tracksuit</h2>
+      <p>£60.00</p>
+      <p>Size: S, M, L</p> 
+      <button onclick="location.href='your_redirect_page.html';">Buy Now</button>
+    </div>
+    <div class="tshirt">
+      <img src="tracksuit2.jpg" alt="Tracksuit 2">
+      <h2>Tracksuit 2</h2>
+      <p>£60.00</p>
+      <p>Size: S, M, L</p> 
+      <button onclick="location.href='your_redirect_page.html';">Buy Now</button>
+    </div>
+
+  </section>
+
+  <section id="hoodies-section" class="tshirt-container">
+    <div class="tshirt">
+      <img src="hoodie1.jpg" alt="Basketball Hoodie 1">
+      <h2>Retro Jersey</h2>
+      <p>£35.00</p>
+      <p>Size: S, M, L</p> 
+      <button onclick="location.href='your_redirect_page.html';">Buy Now</button>
+    </div>
+    <div class="tshirt">
+      <img src="hoodie2.jpg" alt="Basketball Hoodie 2">
+      <h2>Normal Jersey</h2>
+      <p>£30.00</p>
+      <p>Size: S, M, L</p> 
+      <button onclick="location.href='your_redirect_page.html';">Buy Now</button>
+    </div>
+
+  </section>
+
+  <section id="adventurous-section">
+      <h1>[Picking a product is difficult.]</h1>
+      <button id="random-button" style="width: 100px; height: 100px; border-radius: 50%;">Click me</button>
+  </section>
+
+
+  <section class="feedback-section">
+    <div class="feedback-item">
+      <h3>Name: Customer1</h3>
+      <p>Review: This product is amazing!</p>
+      <p>Product: Football T-shirt 1</p>
+      <img src="customer1.jpg" alt="Customer1" class="review-picture">
+      <div class="rating">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+      </div>
+      <p class="post-date">Posted on: <span id="postDate1">2023-11-13</span></p>
+      <div class="like-container">
+        <button class="like-button" onclick="likeReview('postDate1')">
+          <span class="thumbs-up">&#128077;</span> Like
+        </button>
+        <span class="like-count">10 Likes</span>
+      </div>
+    </div>
+
+    <div class="feedback-item">
+      <h3>Name: Customer2</h3>
+      <p>Review: Great quality and fast delivery.</p>
+      <p>Product: Tracksuit</p>
+      <img src="customer2.jpg" alt="Customer2" class="review-picture">
+      <div class="rating">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+      </div>
+      <p class="post-date">Posted on: <span id="postDate2">2023-11-14</span></p>
+      <button class="like-button" onclick="likeReview('postDate2')">Like</button>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <section id="contact" class="contact-section">
+    <div class="contact-content">
+      <h1>Contact KitzCentral</h1>
+      <p>Have questions or suggestions? Reach out to us!</p>
+      <div class="contact-form">
+        <form action="#" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 KitzCentral</p>
+  </footer>
+
+  
+</body>
+
+</html>

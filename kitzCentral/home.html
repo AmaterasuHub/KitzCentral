@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - KitzCentral</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body, h1, h2, h3, p {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #1c1c1c;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.3s ease;
+    }
+
+    body::-webkit-scrollbar {
+      display: none; 
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      border-bottom: 2px solid #555;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+    }
+
+    #logo {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #fff;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-button {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-button:hover {
+      color: #b3e0ff;
+    }
+
+    .about-me-section {
+      padding: 80px 20px;
+      text-align: center;
+      background-color: #1c1c1c;
+      color: #fff;
+      margin-top: 100px;
+    }
+
+    .about-me-content {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    .about-me-content h2 {
+      margin-bottom: 20px;
+    }
+
+    .about-me-content p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    .about-me-content img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #1c1c1c;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    .about-me-section {
+      padding: 80px 20px;
+      text-align: center;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('about-background.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      margin-top: 100px;
+    }
+
+    .about-me-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .about-me-content h2 {
+      margin-bottom: 20px;
+    }
+
+    .about-me-content p {
+      margin-bottom: 20px;
+    }
+
+    .about-me-content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+
+    .website-info {
+      padding: 80px 20px;
+      text-align: center;
+      background-color: #1c1c1c;
+      color: #fff;
+    }
+
+    .info-container {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .info-item {
+      width: 45%;
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: rgba(51, 51, 51, 0.8);
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: 0.3s;
+    }
+
+    .info-item:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .info-item h3 {
+      margin-bottom: 10px;
+    }
+
+
+    .contact-section {
+      padding: 80px 20px;
+      text-align: center;
+      background-color: #1c1c1c;
+      color: #fff;
+    }
+
+    .contact-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .contact-content h2 {
+      margin-bottom: 20px;
+    }
+
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      border: 1px solid #555;
+      border-radius: 5px;
+      background-color: #1c1c1c;
+      color: #fff;
+    }
+
+    .contact-form button {
+      background-color: #1c1c1c;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #000;
+    }
+
+  </style>
+</head>
+
+  <header>
+    <div class="header-left">
+      <img id="logo" src="logo.png" alt="KitzCentral Logo">
+      <h1>KitzCentral</h1>
+    </div>
+    <nav>
+      <a href="contact.html" class="nav-button">Shop 🎽</a>
+      <a href="tos.docx" class="nav-button" download="tos.docx">Tos 📄</a>
+      <a href="contact.html" class="nav-button">Contact 📞</a>
+      <a href="Faq.html" class="nav-button">Faq ❓</a>
+      <a href="login.html" class="nav-button">Login 🔒</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about-me-section">
+      <div class="about-me-content">
+        <h2>About KitzCentral</h2>
+        <p>Welcome to KitzCentral, your one-stop destination for football enthusiasts! We offer a wide range of premium
+          football merchandise and apparel to suit your passion for the beautiful game.</p>
+        <p>At KitzCentral, we strive to provide high-quality products that showcase your love for football. From
+          comfortable tees to collectible items, we've got you covered.</p>
+        <img src="about.jpg" alt="About KitzCentral">
+      </div>
+    </section>
+
+    <section class="website-info">
+      <div class="info-container">
+        <h2>What We Offer</h2>
+        <div class="info-item">
+          <h3>Wide Range of Products</h3>
+          <p>Discover a diverse collection of football-themed clothing, accessories, and memorabilia.</p>
+        </div>
+        <div class="info-item">
+          <h3>Quality Assurance</h3>
+          <p>We guarantee premium quality materials in all our products for your comfort and satisfaction.</p>
+        </div>
+        <div class="info-item">
+          <h3>Secure Shopping Experience</h3>
+          <p>Shop with confidence knowing that your transactions are safe and secure.</p>
+        </div>
+        <div class="info-item">
+          <h3>Easy Returns</h3>
+          <p>We ensure hassle-free returns and exchanges if you're not entirely satisfied with your purchase.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="contact-content">
+        <h2>Contact Us</h2>
+        <p>If you have any queries or suggestions, feel free to reach out to us. We'd love to hear from you!</p>
+        <div class="contact-form">
+          <form action="#">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 KitzCentral</p>
+  </footer>
+  </body>
+
+</html>

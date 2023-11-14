@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Checkout - Football T-shirt 1">
+  <title>Checkout - Football T-shirt 1</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #1c1c1c;
+      color: #fff;
+      overflow-x: hidden;
+      transition: background-color 0.3s ease;
+    }
+    body::-webkit-scrollbar {
+      display: none; 
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+    }
+
+    #logo {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    nav {
+      display: flex;
+    }
+
+    .nav-button {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-button:hover {
+      color: #b3e0ff;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #333;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    img#largeImage {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    img#largeImage:hover {
+      transform: scale(1.1);
+    }
+
+    img:hover {
+      transform: scale(1.1);
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: background-color 0.3s ease-in-out;
+      width: 100%;
+      max-width: 150px;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .size-selector {
+      width: 100%;
+      padding: 15px;
+      box-sizing: border-box;
+      color: #fff;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 18px;
+      color: #b3e0ff;
+    }
+
+    #quantity {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      border: 1px solid #555;
+      border-radius: 5px;
+      background-color: #1c1c1c;
+      color: #fff;
+    }
+
+    #logo {
+      width: 80px;
+      height: 80px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #b3e0ff;
+      font-size: 16px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+    #size {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      border: 1px solid #555;
+      border-radius: 5px;
+      background-color: #1c1c1c;
+      color: #fff;
+      appearance: none;
+      cursor: pointer;
+    }
+
+    #size option {
+      background-color: #333;
+      color: #fff;
+      font-size: 16px;
+    }
+    .related-products {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 250px;
+      position: fixed;
+      top: 80px; 
+      left: 20px;
+      z-index: 1000;
+    }
+
+    .related-products h2 {
+      font-size: 20px;
+      margin-bottom: 15px;
+      color: #b3e0ff;
+    }
+
+    .related-product {
+      margin-bottom: 20px;
+    }
+
+    .related-product img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .related-product h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .related-product p {
+      font-size: 16px;
+      color: #b3e0ff;
+    }
+
+    .related-product button {
+      background-color: #1c1c1c;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .related-product button:hover {
+      background-color: #000;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header-left">
+      <img id="logo" src="logo.png" alt="KitzCentral Logo">
+      <h1>KitzCentral Checkout</h1>
+    </div>
+    <nav>
+      <a href="home.html" class="nav-button">Home</a>
+      <a href="index.html" class="nav-button">Shop 🎽</a>
+      <a href="tos.docx" class="nav-button" download="tos.docx">Tos 📄</a>
+      <a href="contact.html" class="nav-button">Contact 📞</a>
+      <a href="Faq.html" class="nav-button">Faq ❓</a>
+      <a href="login.html" class="nav-button">Login 🔒</a>
+    </nav>
+  </header>
+
+  <main>
+    <img id="largeImage" src="football-tshirt1.jpg" alt="Football T-shirt 1">
+    <div class="tshirt-info">
+      <h2>Football T-shirt 1</h2>
+      <p>Description: Elevate your style with this amazing football-themed t-shirt. Made from high-quality materials for
+        maximum comfort.</p>
+      <p>Price: $25.00</p>
+
+
+      <label for="size" class="size-selector">Select Size:</label>
+      <select id="size">
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+      </select>
+
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" min="1" value="1">
+
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+  </main>
+  <aside class="related-products">
+    <h2>You Might Also Like</h2>
+    <div class="related-product">
+      <img src="hoodie1.jpg" alt="Product 1">
+      <h2>Retro Jersey</h2>
+      <p>£35.00</p>
+      <p>Size: S, M, L</p> 
+      <button onclick="location.href='hoodie1.html';">view</button>
+    </div>
+  </aside>
+
+  <footer>
+    <p>&copy; 2023 KitzCentral</p>
+  </footer>
+
+  <script>
+    function addToCart() {
+      const size = document.getElementById('size').value;
+      const quantity = document.getElementById('quantity').value;
+
+      window.location.href = 'bought';
+    }
+  </script>
+</body>
+
+</html>
